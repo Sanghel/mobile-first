@@ -152,18 +152,21 @@ main
 }
 .main-tablas-container
 {
-    width: 100%;
-    min-width: 240px;
-    max-width: 500px;
-    height: 720px;
+   display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 .main-currency-table
 {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 30px;
+    margin-top: 20px;
     font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title
@@ -263,6 +266,7 @@ main
 }
 .main-comission-table
 {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -286,7 +290,8 @@ main
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin: 0 30px;
+    padding-right: 30px;
 }
 .comission-table--container table 
 {

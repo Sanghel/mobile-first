@@ -152,7 +152,8 @@ main
 }
 .main-tablas-container
 {
-   display: flex;
+    display: flex;
+    min-width: 320px;
     height: 400px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
